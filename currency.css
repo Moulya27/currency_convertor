@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+:root{
+    --primary-color:  #844655;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('img/currency.jpg');
+    background-size: cover;
+    font-family: 'PT Serif',sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 2rem;
+}
+
+h1{
+    color: var(--primary-color);
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+.btn{
+    color: white;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+}
+.wrapper{
+    background-color: white;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+}
+.currency{
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.currency select{
+    padding: 0.75rem 1.5rem 0.75rem 0.75rem;
+
+    border: 1px solid #dedede;
+    border-radius: 0.5rem;
+    background: transparent;
+}
+
+.currency input{
+    border: 0;
+    background: transparent;
+    font-size: 1.25rem;
+    text-align: right;
+
+}
+.swap-rate-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rate{
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    padding: 0 10px;
+}
+.err_message{
+    color: red;
+    font-size: 1rem;
+}
+
+select:focus,input:focus,button:focus{
+    outline: 0;
+}
