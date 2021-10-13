@@ -82,3 +82,8 @@ p{
 select:focus,input:focus,button:focus{
     outline: 0;
 }
+@media screen and (max-width: 992px) {
+    .wrapper{
+        padding: 0 1rem;
+    }
+}
